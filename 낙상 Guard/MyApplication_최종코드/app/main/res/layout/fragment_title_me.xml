@@ -1,0 +1,53 @@
+<!-- fragment_title_me.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 타이틀 텍스트뷰 -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:text="낙상 Guard" />
+
+    <!-- 설명 텍스트뷰 -->
+
+    <!-- 블루투스 기기 목록을 표시할 ListView -->
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="기기 연결 후 정보 입력"
+        android:textSize="16sp" />
+
+    <ListView
+        android:id="@+id/listViewDevices"
+        android:layout_width="match_parent"
+        android:layout_height="201dp"
+        android:layout_marginTop="20dp" />
+
+    <!-- 시작하기 버튼 -->
+    <Button
+        android:id="@+id/btnstart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="시작하기" />
+
+    <!-- 정보 입력 버튼 -->
+    <Button
+        android:id="@+id/btnEnterInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="정보 입력" />
+
+</LinearLayout>

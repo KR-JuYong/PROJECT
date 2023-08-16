@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F4F4F4">
+
+    <!-- 정보 조회 제목 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:text="정보 수정"
+        android:textSize="28sp"
+        android:textColor="#333333"
+        android:textStyle="bold" />
+
+    <!-- 데이터를 보여줄 ListView -->
+    <ListView
+        android:id="@+id/listViewData"
+        android:layout_width="wrap_content"
+        android:layout_height="66dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:elevation="4dp" />
+
+    <!-- 데이터를 보여주는 TextView -->
+
+    <!-- 정보 수정 입력란 -->
+    <!-- Info Text -->
+    <TextView
+        android:id="@+id/textViewData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="버튼을 누르고 최적화를 누르세요 :)"
+        android:textSize="16sp"
+        android:textColor="#888888" />
+
+
+    <EditText
+    android:id="@+id/editTextName"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_marginTop="16dp"
+    android:hint="이름을 입력해주세요"
+    android:textSize="16sp"
+    android:textColor="#333333"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp" />
+
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:hint="나이를 입력해주세요"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp" />
+
+    <EditText
+        android:id="@+id/editTextAddress"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:hint="주소를 입력해주세요"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp" />
+
+    <EditText
+        android:id="@+id/editTextBloodType"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:hint="혈액형 입력해주세요"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp" />
+
+    <EditText
+        android:id="@+id/editTextEmergencyContact"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:hint="비상 연락처를 입력해주세요"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp" />
+
+    <EditText
+        android:id="@+id/editTextPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:hint="사용자의 번호를 입력해주세요"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp" />
+
+    <!-- 버튼 레이아웃 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+
+        <!-- Optimize Button -->
+        <Button
+            android:id="@+id/btnOptimize"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="optimizeData"
+            android:text="최적화"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            tools:ignore="ButtonStyle" />
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/view_data_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="showData"
+            android:text="저장"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            tools:ignore="ButtonStyle" />
+
+    </LinearLayout>
+
+</LinearLayout>

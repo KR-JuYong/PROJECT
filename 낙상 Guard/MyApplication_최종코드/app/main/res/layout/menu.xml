@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- 액티비티 제목 "낙상 Guard" 표시 -->
+
+    <TextView
+        android:id="@+id/TITLE_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="낙상 Guard"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/eme_btn"
+        android:layout_width="158dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="76dp"
+        android:text="119전화"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TITLE_name" />
+
+    <Button
+        android:id="@+id/view_info_btn"
+        android:layout_width="159dp"
+        android:layout_height="167dp"
+        android:layout_marginTop="24dp"
+        android:text="정보 수정"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eme_btn"
+        app:layout_constraintVertical_bias="0.12" />
+
+    <!-- 블루투스 연결 상태를 표시하는 TextView -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
