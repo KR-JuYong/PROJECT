@@ -1,0 +1,43 @@
+if(종목이름.contains("우드랩")){
+                    String 시가총액 =driver.findElement(By.xpath("//*[@id=\"tab_con1\"]/div[1]/table/tbody/tr[1]/td")).getText();
+                System.out.println("시가 총액: "+시가총액);
+        
+                String 시가총액순위 =driver.findElement(By.xpath("//*[@id=\"tab_con1\"]/div[1]/table/tbody/tr[2]/td")).getText();
+                System.out.println("시가 총액순위 : "+시가총액순위);
+    
+                String 상장주식수 =driver.findElement(By.xpath("//*[@id=\"tab_con1\"]/div[1]/table/tbody/tr[3]/td/em")).getText();
+                System.out.println("상장 주식수: "+상장주식수);
+    
+                String 외국인한도주식수 =driver.findElement(By.xpath("//*[@id=\"tab_con1\"]/div[2]/table/tbody/tr[1]/td")).getText();
+                System.out.println("외국인 한도 주식 수(A): "+외국인한도주식수);
+    
+                String 외국인보유주식수 =driver.findElement(By.xpath("//*[@id=\"tab_con1\"]/div[2]/table/tbody/tr[2]/td")).getText();
+                System.out.println("외국인 보유 주식 수(B): "+외국인보유주식수);
+    
+                String 외국인소진율 =driver.findElement(By.xpath("//*[@id=\"tab_con1\"]/div[2]/table/tbody/tr[3]/td")).getText();
+                System.out.println("외국인 소진율(B/A): "+외국인소진율);
+    
+                String 투자의견목표주가 =driver.findElement(By.xpath("//*[@id=\"tab_con1\"]/div[3]/table/tbody/tr[1]/td")).getText();
+                System.out.println("투자의견 | 목표주가: "+투자의견목표주가);
+    
+                String ㅣ52주최고52주최저 =driver.findElement(By.xpath("//*[@id=\"tab_con1\"]/div[3]/table/tbody/tr[2]/td")).getText();
+                System.out.println("52주최고 | 52주최저: "+ㅣ52주최고52주최저);
+    
+                String PEREPS =driver.findElement(By.xpath("//*[@id=\"tab_con1\"]/div[4]/table/tbody[1]/tr/td")).getText();
+                System.out.println("PER|EPS: "+PEREPS);
+    
+                String 추정PEREPS =driver.findElement(By.xpath("//*[@id=\"tab_con1\"]/div[4]/table/tbody[2]/tr[1]/td")).getText();
+                System.out.println("추정 PER|EPS: "+추정PEREPS);
+    
+                String PBRBPS =driver.findElement(By.xpath("//*[@id=\"tab_con1\"]/div[4]/table/tbody[2]/tr[2]/td")).getText();
+                System.out.println("PBR|BPS: "+PBRBPS);
+    
+                String 배당수익률 =driver.findElement(By.xpath("//*[@id=\"tab_con1\"]/div[4]/table/tbody[2]/tr[3]/td")).getText();
+                System.out.println("배당 수익률: "+배당수익률);
+    
+                String 동일업종PER =driver.findElement(By.xpath("//*[@id=\"tab_con1\"]/div[5]/table/tbody/tr[1]/td")).getText();
+                System.out.println("동일업종 PER: "+동일업종PER);
+    
+                String 동일업종등락률 =driver.findElement(By.xpath("//*[@id=\"tab_con1\"]/div[5]/table/tbody/tr[2]/td")).getText();
+                System.out.println("동일업종 등락률: "+동일업종등락률);
+                }else{
